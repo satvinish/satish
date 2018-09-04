@@ -1,0 +1,19 @@
+Assignment 2.1
+
+Ques.1. What are the different methods to call a function in R?
+Ans. There are three different methods to call a function  in R.
+* Anonymous Functions
+* Nested function
+* User defined function
+
+Ques.2. The lazy evaluation of a function means, the argument is evaluated only if it is evaluated only if it is used  inside the body of the function. 
+Ans. True
+Ques.3. State True or False:
+Ques.3.a. Insights driven from descriptive analytics is not meaningful.
+Ans: False
+Ques.3.b. The number of values in each Elements of a list, should be equal.
+Ans: False
+Ques.3.c. The datasets are not stored in memory of the computer using R.
+Ans: False
+Ques.3.d. Data frames and matrices are two dimensional however the array is multidimensional.
+Ans: True

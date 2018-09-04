@@ -1,0 +1,35 @@
+
+
+Assignment 2.2
+Ques.1. Read multiple JSON files into a directory to convert into a dataset.
+I have files text1, text2, text3 in the directory JSON.
+Ans:
+setwd("Users/Desktop/json")
+temp = list.files(pattern="text*.")
+myfiles = lapply(temp, read.delim)
+library("rjson")
+json_file <- "myfiles"
+library(jsonlite)
+out <- jsonlite::fromJSON(json_file)
+out[vapply(out, is.null, logical(1))] <- "none"
+data.frame(out, stringsAsFactors = FALSE)[,1:5]
+View(out)
+
+
+Ques.2. 2. Parse the following JSON into a data frame.
+js<-'{
+"name": null, "release_date_local": null, "title": "3 (2011)",
+"opening_weekend_take": 1234, "year": 2011,
+"release_date_wide": "2011-09-16", "gross": 59954
+}'
+
+Ans:
+[1] "{\n\"name\": null, \"release_date_local\": null, \"title\":
+
+ \"3 (2011)\",\n\"opening_weekend_take\": 1234, \"year\": 2011,
+
+\n\"release_date_wide\": \"2011-09-16\", \"gross\": 59954\n}"
+
+
+3. write a script for a variable Bining using R?
+Topic not covered in class
